@@ -1,0 +1,351 @@
+
+:root {
+    --color-lavender_blue: #d8dcff;
+    --color-blue_purple: #AEADF0;
+    --color-rosy_brown: #C38D94;
+    --color-rose_dust: #a76571;
+    --color-independence: #565676;
+    --color-tea_green: #C9DCB3;
+    --color-shadow: #7b7263;
+
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    min-height: 100vh;
+}
+
+
+/* NAV */
+.nav_logo{
+   width: 6vw;
+   height: auto;    
+   position: absolute;
+   left: 3vw;
+}
+nav {
+    display: flex;
+    justify-content:flex-end ; 
+    align-items: center;
+    width: 95vw;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-align: center;
+}
+li {
+    color: var(--color-rose_dust);
+    width:15vw;
+    font-size: 3vw;
+    margin-top: 2vw;
+}
+li:hover {
+    background-color: var(--color-tea_green);
+}
+a {
+    text-decoration: none;
+}
+
+
+
+/* HEROS*/
+.hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+    border-bottom: var(--color-rose_dust) solid 2vw ;
+    border-top: var(--color-rose_dust) solid 2vw;
+} 
+.hero_home {
+    background-image: url("https://images.unsplash.com/photo-1602419260650-697189b3d7db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGRvbnV0c3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60");
+}
+.hero_directions{
+background-image: url("https://images.unsplash.com/photo-1604287094096-59a7dee979e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZG9udXRzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+.hero_contact{
+background-image: url("https://images.unsplash.com/photo-1506224988854-3f6992c9334d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fGRvbnV0c3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60");
+}
+.hero_menu {
+background-image: url("https://images.unsplash.com/photo-1516919549054-e08258825f80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGRvbnV0cyUyMG1lbnV8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60");
+}
+
+
+/* LAYOUT */
+/* .our_story {
+    display: flex;
+    flex-direction: column;   
+}
+
+.our_menu {
+    display: flex;
+    flex-direction: column;  
+    /* background-color: rgba(167, 101, 113, .09);  */
+    /* margin-top: 4vh;
+    padding-bottom: 4vh;
+}
+.donuts {
+    display: flex;
+    flex-direction: row;
+    min-height: 50vh;
+    justify-content: space-evenly;
+    align-items: center;
+} */ 
+.layout_center_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5vh;
+}
+
+.layout_left_col {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-weight: 700;
+    margin-left: 2vw;
+    margin-bottom: 5vh;
+}
+
+.layout_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4vh;
+    padding-bottom:4vh;
+}
+.layout_row_events {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4vh 4vw;
+    padding-bottom: 4vh;
+}
+.layout_row_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.layout_title {
+    margin: 2vh 8vw;
+}
+td,
+tr{
+    padding: .5vh 3vw;
+}
+
+.newsletter {
+    background-color: black;
+    color: white;
+}
+.green {
+    background-color: var(--color-tea_green);
+}
+
+
+/* TITLES */
+h1{
+    color: var(--color-independence);
+}
+h2 {
+    color: var(--color-rose_dust);
+    font-size: 2rem;
+}
+th,td {
+    text-align: center;
+}
+.layout_title > p {
+    text-align: justify;
+}
+
+/* TEXT */
+.text_justify {
+    width:60vw;
+    font-size: 1.7rem;
+    text-align: justify; 
+}
+.text_center {
+    display: flex;
+    justify-content: center;
+}
+p, th, td{
+    font-size: 1.4rem;
+}
+ 
+
+/* IMAGES */
+.story_image {
+    width: 25vw;
+    height: auto;
+    margin: 8vh 3vw 3vh;
+    border-radius: 20%;
+}
+.donut_image {
+    width: 20vw;
+    height: auto;
+    margin: 2vh auto;
+    border-radius: 20%;
+    border: solid black ;
+}
+.donut_image_minis {
+    width: 10vw;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20%;
+    border: solid black;
+}
+.events_image {
+    width: 20vw;
+    height: auto;
+    margin: 0 auto;
+    border: solid black;
+}
+.image_center {
+    width: auto;
+    height: 40vh;
+    margin: 2vh auto;
+    border-radius: 20%;
+}
+.fa-brands {
+    color: var(--color-rose_dust);
+    margin-right: 1vw;
+    font-size: 2rem;
+}
+
+
+/* BUTTONS */
+.button {
+    padding: 2vh 1.5vw;
+    background-color: var(--color-rose_dust);
+    color: white;
+    align-self: center;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.button:hover {
+    background-color: var(--color-lavender_blue);
+    color: black;
+   
+}
+
+
+/* FORMS */
+
+.form_input,
+.message {
+    width: 30vw;
+    border: var(--color-independence) solid .1vh;
+    font-size: .9rem;
+}
+.message {
+    height: 10vh;
+}
+.form_input {
+    height: 5vh;
+}
+.form_btn {
+    width: 15vw;
+    height: 4vh;
+    margin-top: 2vh;
+    background-color: var(--color-tea_green);
+}
+.newsletter_input {
+    width: 50vw;
+    height: 5vh;
+}
+.newsletter_button {
+    background-color: var(--color-lavender_blue);
+    height: 5vh;
+    width: auto;
+}
+.newsletter_button:hover {
+    background-color: var(--color-rose_dust);
+    color: white;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+
+    nav {
+        justify-content: center;
+    }
+    .nav_logo {
+        width: 6vw;
+        height: auto;
+        position:static;
+    }
+        .layout_row,.layout_row_events,.layout_row_menu,
+    ul {
+        flex-direction: column;
+    }
+    
+    li {
+        width:85vw;
+        font-size: 1rem;
+        margin: 1vh auto;
+    }
+    .hero {
+        height: 55vh;
+    }
+    h1{
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    .button, .form_input, .message {
+            font-size: .6rem;
+            padding: 2vw;
+        }
+    p, .fa-brands, td, th {
+        font-size: .8rem;
+    }
+     .story_image, .image_center  {
+        width: 85vw;
+    
+    }
+    .donuts_mini,  {
+        display: flex;
+        flex-direction: row;
+    }
+    .donut_image, .events_image{
+        margin-right: 4vw;
+        width:85vw;
+        height: auto;
+    }
+    .form_input, .message {
+    width: 60vw;
+    }
+    .text {
+        text-align: left;
+        width: 80vw;
+        font-size: 1rem;
+        margin: 1vh auto;
+    }
+           
+
+
+     /* Sources: 
+    https: //www.timesunion.com/518life/article/Cider-Belly-Doughnuts-is-making-downtown-Albany-5764699.php#taboola-1 
+    https: //www.facebook.com/ciderbellyevents/ 
+    https: //www.facebook.com/ciderbellydoughnuts
+    http: //alloveralbany.com/archive/2014/08/07/eating-six-donuts-at-cider-belly*/
